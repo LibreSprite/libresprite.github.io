@@ -17,15 +17,23 @@ body{
 
 }
 
+.material-icons{
+  margin-left: 5px;
+  margin-top: -5px;
+  text-align: center;
+  vertical-align: middle;
+}
 
-
-
+a{
+  color:#3b6978;
+}
 
 .btn-gray {
     color: #fff;
     background-color: #3b6978;
     border-color: #3b6978;
-    box-shadow: none; }
+    box-shadow: none; 
+    font-size: 1.3rem;}
     .btn-danger:hover {
       color: #fff;
       background-color: #204051;
