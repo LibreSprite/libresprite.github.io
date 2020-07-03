@@ -7,6 +7,9 @@
     margin-bottom: 10px;
     width: 10%;
     height: 10%;
+    -ms-interpolation-mode: nearest-neighbor; /* ie */
+    image-rendering: crisp-edges; /* ff */
+    image-rendering: pixelated; /* chrome */
 }
 
 body{
