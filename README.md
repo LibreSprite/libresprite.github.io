@@ -8,9 +8,15 @@ Website for the LibreSprite project.
  - Correct some typo
  - Add download icon
  - change links color to match
+## Update 2
+ - Added downloads number
+ - added menu bar
+ - changed color
+ - changed font
+ - added social links and icons
+ - added system requeriments
+ -improved composition 
 # In progress
  - screenshots
- - inprove UI/UX (Maybe more colorful)
- - add details in dowload section 
- - pixel font
-.
+ - Responsive menu bar (i dont't kwow why it does not work)
+

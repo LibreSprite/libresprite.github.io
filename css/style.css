@@ -1,8 +1,4 @@
 
-.title{
-    margin-top: 20px;   
-}
-
 .logo_img{
     margin-bottom: 10px;
     width: 10%;
@@ -13,8 +9,19 @@
 }
 
 body{
-  background-color: #e7dfd5;
+  background-color: #6796de;
+  color: #fff;
+  font-size: 22px;
 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2,h3,h4,h5{
+  color:#39475c;
+}
+
+footer{
+  font-size: 14px;
 }
 
 .material-icons{
@@ -58,3 +65,102 @@ a{
 .social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
 .social_footer_ul li a { color:rgb(0, 0, 0); border:1px solid rgb(0, 0, 0); padding:8px;border-radius:50%;}
 .social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+
+
+nav {
+  
+  background: #fff;
+  color: #3b6978;
+}
+nav .menuItems {
+  list-style: none;
+  display: flex;
+}
+nav .menuItems li {
+  margin: 50px;
+}
+nav .menuItems li a {
+  text-decoration: none;
+  color: #3b6978;
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+nav .menuItems li a::before {
+  content: attr(data-item);
+  transition: 0.5s;
+  position: absolute;
+  color: #3b6978;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+}
+nav .menuItems li a:hover::before {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+ul li a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #3b6978;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+ul li a:hover {
+  color: #95a5a6;
+}
+ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.header-1{
+  margin-top: 50px;
+}
+
+.downloads{
+  color:#000
+}
+
+
+.social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+
+
+#social-fb:hover {
+  color: #3B5998;
+}
+#social-tw:hover {
+  color: #4099FF;
+}
+#social-gp:hover {
+  color: #d34836;
+}
+#social-em:hover {
+  color: #f39c12;
+}
