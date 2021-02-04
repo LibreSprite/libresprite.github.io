@@ -19,7 +19,7 @@
         }
       }
     });
-  
+    $('[data-toggle="tooltip"]').tooltip()
     // Closes responsive menu when a scroll trigger link is clicked
     $('.js-scroll-trigger').click(function() {
       $('.navbar-collapse').collapse('hide');
@@ -46,3 +46,18 @@
   
   })(jQuery); // End of use strict
   
+  function copyRepo() {
+    /* Get the text field */
+    var copyText = document.getElementById("repo");
+  
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  
+    /* Alert the copied text */
+    
+  }
+

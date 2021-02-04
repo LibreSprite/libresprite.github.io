@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="js/bootstrap-material-design.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
 
   </head>
 
@@ -21,6 +21,7 @@
 <!-- Navigation Bar-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
       <div class="container">
+        <img src="assets/ase.ico" alt="" srcset="" id="nav_img" >
         <a class="navbar-brand js-scroll-trigger" href="#page-top">LibreSprite</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -31,6 +32,7 @@
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#downloads">Downloads</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#history">History</a></li>           
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#credits">Credits</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#community">Community</a></li>
           </ul>
         </div>
       </div>
@@ -82,55 +84,84 @@
 
         <div class="card mb-4 box-shadow">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Windows Installer</h4>
+            <h4 class="my-0 font-weight-normal">Windows</h4>
           </div>
+          
           <div class="card-body">
+            <i class="fab fa-windows fa-7x icons-dowloads"></i>
             <ul class="list-unstyled mt-3 mb-4">
-              System Requirements:
-              <li>Operating system: Windos 7 or above</li> 
+              <b>System Requirements:</b>
+              <li>OS: Windos 7 or above</li> 
               <li>Processor: x86 or x64 bits </li>
               <li>RAM: 1Gb </li>
             </ul>
+            <br>
             <a href="https://github.com/LibreSprite/LibreSprite/releases/download/_tmp/LibreSpriteWin.exe" download>
-              <button type="button" class="btn btn-raised btn-gray">Download V1.0 <i class="large material-icons">cloud_download</i></button>
+              <button type="button" class="btn btn-raised btn-gray">Installer<i class="large material-icons">cloud_download</i></button>
             </a>
           </div>
         </div>
 
         <div class="card mb-4 box-shadow">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Linux AppImage</h4>
+            <h4 class="my-0 font-weight-normal">Linux</h4>
           </div>
           <div class="card-body">
+            <i class="fab fa-linux fa-7x icons-dowloads"></i>
             <ul class="list-unstyled mt-3 mb-4">
-              System Requirements:
-              <li>Operating system: Linux </li> 
+              <b>System Requirements:</b>
+              <li>OS: Linux </li> 
               <li>Processor: x86 or x64 bits </li>
               <li>RAM: 1Gb </li>
               <li></li>
             </ul>
+            <br>
             <a href="https://github.com/LibreSprite/LibreSprite/releases/tag/continuous" download>
-              <button type="button" class="btn btn-raised btn-gray">Download V1.0 <i class="large material-icons">cloud_download</i></button>
+              <button type="button" class="btn btn-raised btn-gray">AppImage<i class="large material-icons">cloud_download</i></button>
             </a>
-            <p> <a href="https://github.com/LibreSprite/LibreSprite">Get the source code</a></p>
           </div>
         </div>
 
         <div class="card mb-4 box-shadow">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">MacOS</h4>
+            <h4 class="my-0 font-weight-normal">macOS</h4>
           </div>
           <div class="card-body">
+            <i class="fab fa-apple fa-7x icons-dowloads" ></i>
             <ul class="list-unstyled mt-3 mb-4">
-              System Requirements:
-              <li>Operating system: Mac OS X 10.11.4 El Capitan or above </li> 
+              <b>System Requirements:</b>
+              <li>OS: Mac OS X 10.11.4 </li> 
               <li>Processor: x86 or x64 bits </li>
               <li>RAM: 1Gb </li>
               <li></li>
             </ul>
-            <button type="button" class="btn btn-raised btn-gray">Coming soon!</button>
+            <br>
+            <button type="button" class="btn btn-raised btn-gray" disabled style="color:#3b6978;" >Coming soon!</button>
           </div>
         </div>
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Source Code</h4>
+          </div>
+          <div class="card-body">
+            <i class="fab fa-github fa-7x icons-dowloads" ></i>
+            <ul class="list-unstyled mt-3 mb-4">
+              <b>Instructions:</b>
+              <li>1) Get<a href="https://git-scm.com/downloads"> git </a>for your system</li> 
+              <li>2) Clone the repository</li>
+              <li ><input type="text" value="git clone --recursive https://github.com/LibreSprite/LibreSprite" id="repo" readonly> 
+                <button class="btn btn-copy" onclick="copyRepo()" data-toggle="tooltip" data-placement="top" title="Copy to clipboard"> 
+                  <i class="fas fa-clipboard"></i>
+                </button>
+              </li>
+            </ul>
+            <a href="https://github.com/LibreSprite/LibreSprite/archive/continuous.zip" download>
+            <button type="button" class="btn btn-raised btn-gray">Zip file<i class="large material-icons">cloud_download</i></button>
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -172,11 +203,12 @@
 <!-- footer  -->
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
 
-      <div class="text-center center-block ">
+      <div class="text-center center-block " id="community">
           <h3>Social Networks</h3>
           <a href="https://github.com/LibreSprite/LibreSprite"><i class="fab fa-github fa-3x social"></i></a>
           <a href="https://discord.gg/95gbyU5"><i class="fab fa-discord fa-3x social"></i></a>
           <a href="https://webchat.freenode.net/#LibreSprite"><i class="fab fa-weixin fa-3x social"></i></a>
+          <a href=""></a>
       </div>
       <br>
       <p class="text-center">This program is distributed under the 
@@ -188,6 +220,8 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    
+    <script src="js/bootstrap-material-design.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
