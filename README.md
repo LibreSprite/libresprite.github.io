@@ -15,8 +15,13 @@ Website for the LibreSprite project.
  - changed font
  - added social links and icons
  - added system requeriments
- -improved composition 
+  -improved composition 
+## Update 3
+ - Added pixel font
+ - Added OS's icons
+ - fix responsive menu nav
 # In progress
  - screenshots
- - Responsive menu bar (i dont't kwow why it does not work)
-
+ - images 
+ - Improve UI and navigation
+ - set color scheme  
