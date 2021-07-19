@@ -203,6 +203,19 @@ ul li a:hover::after {
   -o-transition-duration: 0.5s;
 }
 
+.code{
+  color: #fff;
+  background-color: #39475c;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+code{
+  color: #fff;
+  background-color: #39475c;
+  padding: 10px;
+  border-radius: 20px;
+}
 
 .social_footer_ul { display:table; list-style-type:none;  }
 .social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }

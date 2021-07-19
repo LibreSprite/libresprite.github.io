@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -28,177 +28,30 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">Features</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#downloads">Downloads</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#history">History</a></li>           
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#credits">Credits</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#community">Community</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#!/features">Features</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#!/downloads">Downloads</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#!/history">History</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#!/install">Compile</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#!/contributing">Contributing</a></li>           
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#!/credits">Credits</a></li>
+            
           </ul>
         </div>
       </div>
     </nav>
 
-<!-- introduccion -->
-
+   
     <div class="header-1 pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <img src="assets/libresprite.png" alt="" srcset="" class="logo_img">
       <h1 class="display-4">LibreSprite</h1>
       <br>
-      <p class="lead">LibreSprite is a free and open source program for creating and animating your sprites.</p>
+       <div ng-view></div>
     </div>
-        
-  <!-- features -->
+
     
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="features" >
-      <div class="container">
-        <h1>Features</h1>
-        <br>
-        <div class="row">
-          <div class="col">
-            <ul class="list-unstyled text-left">
-              <li>- Real-time animation previews.</li>
-              <li>- Onion skinning.</li>
-              <li>- Multiple sprites can be edited at once.</li>
-              <li>- Ready to use palettes, or make your own.</li>
-              <li>- Sprites are composed of both layers &amp; frames.</li>                
-            </ul>
-          </div>
-          <div class="col">
-            <ul class="list-unstyled text-left">
-              <li>- Tiled drawing mode, useful to draw patterns and textures.</li>
-              <li>- Pixel precise tools like filled contour, polygon, shading mode, etc.</li>
-              <li>- Several file types supported for your sprites and animations.</li>
-            </ul>
-          </div>
-    </div>
-
-    <!-- Downloads -->
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="downloads" >
-      <h1 class="display-4">Downloads</h1>
-      <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/LibreSprite/LibreSprite/total?color=blue&label=Downloads&logoColor=blue">
-      <br>
-    </div>
-
-    <div class="container downloads">
-      <div class="card-deck mb-3 text-center">
-
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Windows</h4>
-          </div>
-          
-          <div class="card-body">
-            <i class="fab fa-windows fa-7x icons-dowloads"></i>
-            <ul class="list-unstyled mt-3 mb-4">
-              <b>System Requirements:</b>
-              <li>OS: Windos 7 or above</li> 
-              <li>Processor: x86 or x64 bits </li>
-              <li>RAM: 1Gb </li>
-            </ul>
-            <br>
-            <a href="https://github.com/LibreSprite/LibreSprite/releases/download/_tmp/LibreSpriteWin.exe" download>
-              <button type="button" class="btn btn-raised btn-gray">Installer<i class="large material-icons">cloud_download</i></button>
-            </a>
-          </div>
-        </div>
-
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Linux</h4>
-          </div>
-          <div class="card-body">
-            <i class="fab fa-linux fa-7x icons-dowloads"></i>
-            <ul class="list-unstyled mt-3 mb-4">
-              <b>System Requirements:</b>
-              <li>OS: Linux </li> 
-              <li>Processor: x86 or x64 bits </li>
-              <li>RAM: 1Gb </li>
-              <li></li>
-            </ul>
-            <br>
-            <a href="https://github.com/LibreSprite/LibreSprite/releases/tag/continuous" download>
-              <button type="button" class="btn btn-raised btn-gray">AppImage<i class="large material-icons">cloud_download</i></button>
-            </a>
-          </div>
-        </div>
-
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">macOS</h4>
-          </div>
-          <div class="card-body">
-            <i class="fab fa-apple fa-7x icons-dowloads" ></i>
-            <ul class="list-unstyled mt-3 mb-4">
-              <b>System Requirements:</b>
-              <li>OS: Mac OS X 10.11.4 </li> 
-              <li>Processor: x86 or x64 bits </li>
-              <li>RAM: 1Gb </li>
-              <li></li>
-            </ul>
-            <br>
-            <button type="button" class="btn btn-raised btn-gray" disabled style="color:#3b6978;" >Coming soon!</button>
-          </div>
-        </div>
-
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Source Code</h4>
-          </div>
-          <div class="card-body">
-            <i class="fab fa-github fa-7x icons-dowloads" ></i>
-            <ul class="list-unstyled mt-3 mb-4">
-              <b>Instructions:</b>
-              <li>1) Get<a href="https://git-scm.com/downloads"> git </a>for your system</li> 
-              <li>2) Clone the repository</li>
-              <li ><input type="text" value="git clone --recursive https://github.com/LibreSprite/LibreSprite" id="repo" readonly> 
-                <button class="btn btn-copy" onclick="copyRepo()" data-toggle="tooltip" data-placement="top" title="Copy to clipboard"> 
-                  <i class="fas fa-clipboard"></i>
-                </button>
-              </li>
-            </ul>
-            <a href="https://github.com/LibreSprite/LibreSprite/archive/continuous.zip" download>
-            <button type="button" class="btn btn-raised btn-gray">Zip file<i class="large material-icons">cloud_download</i></button>
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-<!-- History and Contributing -->
-
-    <div class="row pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="history" >
-<!-- History-->
-      <div class="col">
-        <h1 class="display-4 text-center">History</h1>
-        <br>
-        <p class="text-justify" >LibreSprite originated as a fork of <a href="https://www.aseprite.org" rel="nofollow">Aseprite</a>, 
-        developed by <a href="https://github.com/dacap">David Capello</a>. Aseprite used to be distributed under the GNU General Public 
-        License version 2, but was moved to a proprietary license on <a href="https://github.com/aseprite/aseprite/commit/5ecc356a41c8e29977f8608d8826489d24f5fa6c">
-        August 26th, 2016</a>.</p>
-      </div>
-
-
-<!-- Contributing -->
-      <div class="col">
-        <h1 class="display-4 text-center">Contributing</h1>
-        <br>
-        <p class="text-justify">As LibreSprite has a newly budding community, we need help building the infrastructure of our development, support, and news networks. If you would like to help, please make yourself known at <a href="https://webchat.freenode.net/#LibreSprite" rel="nofollow">#LibreSprite</a> and checkout our guide on <a href="https://github.com/LibreSprite/LibreSprite/blob/master/CONTRIBUTING.md">contributing</a>.</p>
-      </div>
-    </div>
 
 
 
-<!-- Credits -->
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="credits" >
-      <h1 class="display-4">Credits</h1>
-      <p class="text-justify">An <em><strong>enormous</strong></em> thank you to the original developers of 
-      <a href="https://www.aseprite.org" rel="nofollow">Aseprite</a>, without them and their original licensing 
-      this project wouldn’t exist. Additional shout-outs are given in the 
-      <a href="https://github.com/LibreSprite/LibreSprite/blob/master/CONTRIBUTORS.md">list of contributors</a>. 
-      If you have submitted work to LibreSprite and would like to have your name on the list, please create a pull 
-      request or get in touch and we’ll make it happen.</p>
-    </div>
 
 <!-- footer  -->
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
@@ -223,5 +76,16 @@
     
     <script src="js/bootstrap-material-design.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/introductionsCtrl.js"></script>
+    <script src="js/controllers/featuresCtrl.js"></script>
+    <script src="js/controllers/downloadsCtrl.js"></script>
+    <script src="js/controllers/historyCtrl.js"></script>
+    <script src="js/controllers/creditsCtrl.js"></script>
+    <script src="js/controllers/contributingCtrl.js"></script>
+    <script src="js/controllers/installCtrl.js"></script>
+
   </body>
 </html>
