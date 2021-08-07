@@ -10,7 +10,7 @@
 body{
   background-color: var(--primary);
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   font-family: "vcr", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 
@@ -18,6 +18,10 @@ body{
 
 h1, h2,h3,h4,h5{
   color:#39475c;
+}
+
+.compile code{
+  text-transform: none;
 }
 
 footer{
@@ -213,8 +217,16 @@ ul li a:hover::after {
 code{
   color: #fff;
   background-color: #39475c;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.ul-code{
+  list-style-type:none;
+  color: #fff;
+  background-color: #39475c;
+  padding: 6px;
+  border-radius: 10px;
 }
 
 .social_footer_ul { display:table; list-style-type:none;  }
