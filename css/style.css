@@ -122,6 +122,17 @@ ul li a:hover::after {
   margin-top: 50px;
 }
 
+.pixelate{
+  /* margin-top: 10px;
+  margin-bottom: 10px;
+  width: 10%;
+  height: 10%;
+  border-radius: 10%; */
+  -ms-interpolation-mode: nearest-neighbor; /* ie */
+  image-rendering: crisp-edges; /* ff */
+  image-rendering: pixelated; /* chrome */
+}
+
 .logo_img{
   margin-top: 10px;
   margin-bottom: 10px;
