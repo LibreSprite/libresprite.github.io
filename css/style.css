@@ -186,7 +186,11 @@ ul li a:hover::after {
   font-size: small;
 }
 
-
+@media screen and (max-device-width:640px), screen and (max-width:640px) {
+#nav_img {
+	display: none!important;
+	}
+}
 
 
   /* Footer */
