@@ -1,6 +1,7 @@
 @font-face{
   font-family: "vcr";
   src: url(../assets/VCR_OSD_MONO.ttf);
+  font-display: swap;
 }
 
 :root {
@@ -10,14 +11,14 @@
 body{
   background-color: var(--primary);
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "vcr", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 
 }
 
 h1, h2,h3,h4,h5{
-  color:#39475c;
+  color:#344256;
 }
 
 .compile code{
@@ -187,7 +188,7 @@ ul li a:hover::after {
 }
 
 @media screen and (max-device-width:640px), screen and (max-width:640px) {
-#nav_img {
+.logo_img {
 	display: none!important;
 	}
 }
