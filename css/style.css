@@ -1,6 +1,6 @@
 @font-face{
   font-family: "vcr";
-  src: url(../assets/VCR_OSD_MONO.ttf);
+  src: local('vcr'), url(../assets/VCR_OSD_MONO.ttf);
   font-display: swap;
 }
 
@@ -239,15 +239,7 @@ code{
 .social_footer_ul li a { color:rgb(0, 0, 0); border:1px solid rgb(0, 0, 0); padding:8px;border-radius:50%;}
 .social_footer_ul li i {  width:20px; height:20px; text-align:center;}
 
-#social-fb:hover {
-  color: #3B5998;
+.social:hover {
+  color: #344256;
 }
-#social-tw:hover {
-  color: #4099FF;
-}
-#social-gp:hover {
-  color: #d34836;
-}
-#social-em:hover {
-  color: #f39c12;
-}
+
