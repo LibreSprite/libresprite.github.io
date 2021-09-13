@@ -1,7 +1,7 @@
 'use strict';
 
 appControllers.controller(
-    'credits_ctrl',
+    'resources_ctrl',
     ['$scope', '$rootScope', '$routeParams', '$location',
     function ($scope, $rootScope, $routeParams, $location) {
 

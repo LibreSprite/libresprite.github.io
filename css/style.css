@@ -21,9 +21,6 @@ h1, h2,h3,h4,h5{
   color:#344256;
 }
 
-.compile code{
-  text-transform: none;
-}
 
 footer{
   font-size: 14px;
@@ -193,6 +190,16 @@ ul li a:hover::after {
 	}
 }
 
+/* Resources */
+
+.resourceImage{
+  height: 75%;
+  width: 75%;
+}
+
+.resources a {
+  font-size: 24px;
+}
 
   /* Footer */
 
@@ -210,28 +217,6 @@ ul li a:hover::after {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
-}
-
-.code{
-  color: #fff;
-  background-color: #39475c;
-  padding: 10px;
-  border-radius: 20px;
-}
-
-code{
-  color: #fff;
-  background-color: #39475c;
-  padding: 6px;
-  border-radius: 10px;
-}
-
-.ul-code{
-  list-style-type:none;
-  color: #fff;
-  background-color: #39475c;
-  padding: 6px;
-  border-radius: 10px;
 }
 
 .social_footer_ul { display:table; list-style-type:none;  }
