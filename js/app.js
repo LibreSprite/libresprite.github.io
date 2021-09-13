@@ -35,30 +35,17 @@ app_.config(['$routeProvider', '$locationProvider', function ($routeProvider, $l
             templateUrl: 'pages/downloads.html',
             controller: 'downloads_ctrl'
         })
-
     .when(
-        '/history',
+        '/resources',
         {
-            templateUrl: 'pages/history.html',
-            controller: 'history_ctrl'
+            templateUrl: 'pages/resources.html',
+            controller: 'resources_ctrl'
         })
     .when(
-        '/credits',
+        '/about',
         {
-            templateUrl: 'pages/credits.html',
-            controller: 'credits_ctrl'
-        })
-    .when(
-        '/contributing',
-        {
-            templateUrl: 'pages/contributing.html',
-            controller: 'contributing_ctrl'
-        })
-    .when(
-        '/install',
-        {
-            templateUrl: 'pages/install.html',
-            controller: 'install_ctrl'
+            templateUrl: 'pages/about.html',
+            controller: 'about_ctrl'
         })
         // ruta
     // ruta por defecto
