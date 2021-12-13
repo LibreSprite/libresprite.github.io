@@ -228,3 +228,13 @@ ul li a:hover::after {
   color: #344256;
 }
 
+.cardParent{
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.cardTheme{
+ 
+  border-bottom: 30px;
+}
