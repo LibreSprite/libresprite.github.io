@@ -17,7 +17,7 @@ body{
 
 }
 
-h1, h2,h3,h4,h5{
+h1, h2,h3,h4,h5,h6{
   color:#344256;
 }
 
@@ -237,4 +237,12 @@ ul li a:hover::after {
 .cardTheme{
  
   border-bottom: 30px;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.text-left{
+  text-align: left;
 }

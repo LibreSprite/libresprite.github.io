@@ -47,6 +47,11 @@ app_.config(['$routeProvider', '$locationProvider', function ($routeProvider, $l
             templateUrl: 'pages/about.html',
             controller: 'about_ctrl'
         })
+    .when('/news',
+        {   
+            templateUrl: 'pages/news.html', 
+            controller: 'news_ctrl'
+        })
         // ruta
     // ruta por defecto
     .otherwise({ redirectTo: '/' });
