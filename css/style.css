@@ -5,12 +5,14 @@
 }
 
 :root {
-  --primary: #7D929E;
+  --primary: #7d929e;
+  --secondary: #344256;
+  --tertiary: #3b6978;
+  --white: #ffffff;
 }
 
 body{
-  background-color: var(--primary);
-  color: #fff;
+  color: var(--secondary);
   font-size: 18px;
   font-family: "vcr", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
@@ -18,9 +20,12 @@ body{
 }
 
 h1, h2,h3,h4,h5,h6{
-  color:#344256;
+  color: var(--secondary);
 }
 
+a{
+  color:var(--tertiary);
+}
 
 footer{
   font-size: 14px;
@@ -33,18 +38,23 @@ footer{
   vertical-align: middle;
 }
 
-a{
-  color:#3b6978;
-}
-
-
-
   /* menu nav */
 
 nav {
+  background: var(--secondary);
   
-  background: #fff;
-  color: #3b6978;
+}
+
+.navbar-brand{
+  color: var(--white);
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link  {
+  color: var(--white);
 }
 
 #nav_img{
@@ -57,37 +67,8 @@ nav {
   transform: translateY(5px);
 }
 
-nav .menuItems {
-  list-style: none;
-  display: flex;
-}
-nav .menuItems li {
-  margin: 50px;
-}
-nav .menuItems li a {
-  text-decoration: none;
-  color: #3b6978;
-  font-size: 25px;
-  font-weight: 400;
-  transition: all 0.5s ease-in-out;
-  position: relative;
-  text-transform: uppercase;
-}
-nav .menuItems li a::before {
-  content: attr(data-item);
-  transition: 0.5s;
-  position: absolute;
-  color: #3b6978;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 0;
-  overflow: hidden;
-}
-nav .menuItems li a:hover::before {
-  width: 100%;
-  transition: all 0.5s ease-in-out;
+.navbar-nav .nav-link{
+  font-size: 20px;
 }
 
 ul li a::after {
@@ -103,16 +84,15 @@ ul li a::after {
   transform-origin: right;
 }
 ul li a:hover {
-  color: #95a5a6;
+  color: var(--white);
 }
 ul li a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-.navbar-nav .nav-link{
-  font-size: 20px;
-}
+
+
 
   /* introduccion */
 
