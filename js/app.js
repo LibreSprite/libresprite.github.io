@@ -22,7 +22,7 @@ app_.config(['$routeProvider', '$locationProvider', function ($routeProvider, $l
         controller: 'introductions_ctrl'
     })
 
-     .when(
+    .when(
     '/features',
     {
         templateUrl: 'pages/features.html',
