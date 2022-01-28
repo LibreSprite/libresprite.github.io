@@ -175,17 +175,9 @@ ul li a:hover::after {
   width: 75%;
 }
 
-.resources a {
-  font-size: 24px;
-}
+.resources a {font-size: 20px;}
 
-.cardParent{
-  display: grid;
-  grid-gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-}
-
-.cardTheme{ border-bottom: 30px;}
+.cardRow { margin-bottom: 30px;}
 
   /* Footer */
 
