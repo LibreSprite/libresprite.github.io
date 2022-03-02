@@ -1,99 +1,135 @@
-﻿
-    <!-- Downloads -->
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="downloads" >
-        <h1>Downloads</h1>
-        <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/LibreSprite/LibreSprite/total?color=blue&label=Downloads&logoColor=blue">
-        <br>
-      </div>
-  
-      <div class="container downloads">
-        <div class="card-deck mb-3 text-center">
-  
-          <div class="card mb-4 box-shadow">
+<!-- downloads -->
+<div class="px-3 py-3 pb-md-4 mx-auto text-center">
+    <h1>Downloads</h1>
+    <img
+        alt="GitHub All Releases"
+        src="https://img.shields.io/github/downloads/LibreSprite/LibreSprite/total?color=blue&label=Downloads&logoColor=blue"
+    />
+    <br />
+</div>
+
+<div class="container">
+    <div class="card-deck text-center">
+        <div class="card mb-4">
             <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Windows</h4>
+                <h4 class="my-0 font-weight-normal">Windows</h4>
             </div>
-            
+
             <div class="card-body">
-              <i class="fa fa-windows fa-5x icons-dowloads"></i>
-              <ul class="list-unstyled mt-3 mb-4">
-                <b>System Requirements:</b>
-                <li>OS: Windows 7 or above</li> 
-                <li>Processor: x86 or x64 bits </li>
-                <li>RAM: 1 GB </li>
-              </ul>
-              <br>
-              <a href="https://github.com/LibreSprite/LibreSprite/releases" download>
-                <button type="button" class="btn btn-raised btn-gray">Portable<i class="large material-icons">cloud_download</i></button>
-              </a>
+                <i class="fa fa-windows fa-5x"></i>
+                <ul class="list-unstyled mt-3 mb-3">
+                    <b>System Requirements:</b>
+                    <li>OS: Windows 7 or above</li>
+                    <li>Processor: x86 or x64 bits</li>
+                    <li>RAM: 1 GB</li>
+                </ul>
+                <a
+                    class="btn btn-secondary"
+                    href="https://github.com/LibreSprite/LibreSprite/releases"
+                >
+                    Portable
+                    <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                </a>
             </div>
-          </div>
-  
-          <div class="card mb-4 box-shadow">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Linux</h4>
-            </div>
-            <div class="card-body">
-              <i class="fa fa-linux fa-5x icons-dowloads"></i>
-              <ul class="list-unstyled mt-3 mb-4">
-                <b>System Requirements:</b>
-                <li>OS: Linux </li> 
-                <li>Processor: x86 or x64 bits </li>
-                <li>RAM: 1 GB </li>
-                <li></li>
-              </ul>
-              <br>
-              <a href="https://github.com/LibreSprite/LibreSprite/releases" download>
-                <button type="button" class="btn btn-raised btn-gray">AppImage<i class="large material-icons">cloud_download</i></button>
-              </a>
-              <br>
-              <a href="https://flathub.org/apps/details/com.github.libresprite.LibreSprite" download>
-                <button type="button" class="btn btn-raised btn-gray">Flathub<i class="large material-icons">cloud_download</i></button>
-              </a>
-            </div>
-          </div>
-  
-          <div class="card mb-4 box-shadow">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">macOS</h4>
-            </div>
-            <div class="card-body">
-              <i class="fa fa-apple fa-5x icons-dowloads" ></i>
-              <ul class="list-unstyled mt-3 mb-4">
-                <b>System Requirements:</b>
-                <li>OS: Mac OS X 10.11.4 </li> 
-                <li>Processor: x86 or x64 bits </li>
-                <li>RAM: 1 GB </li>
-                <li></li>
-              </ul>
-              <br>
-              
-              <button type="button" class="btn btn-raised btn-gray disabled">Unavailable</button>
-            
-            </div>
-          </div>
-  
-          <div class="card mb-4 box-shadow">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Source Code</h4>
-            </div>
-            <div class="card-body">
-              <i class="fa fa-github fa-5x icons-dowloads" ></i>
-              <ul class="list-unstyled mt-3 mb-4">
-                <b>Instructions:</b>
-                <li>1) Get<a href="https://git-scm.com/downloads"> git </a>for your system</li> 
-                <li>2) Clone the repository</li>
-                <li ><input type="text" value="git clone --recursive https://github.com/LibreSprite/LibreSprite" id="repo" readonly> 
-                  <button class="btn btn-copy" onclick="copyRepo()" data-toggle="tooltip" data-placement="top" title="Copy to clipboard"> 
-                    <i class="fas fa-clipboard"></i>
-                  </button>
-                </li>
-              </ul>
-              <a href="https://github.com/LibreSprite/LibreSprite/releases" download>
-              <button type="button" class="btn btn-raised btn-gray">Zip file<i class="large material-icons">cloud_download</i></button>
-              </a>
-            </div>
-          </div>
-  
         </div>
-      </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Linux</h4>
+            </div>
+            <div class="card-body">
+                <i class="fa fa-linux fa-5x"></i>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <b>System Requirements:</b>
+                    <li>OS: Linux</li>
+                    <li>Processor: x86 or x64 bits</li>
+                    <li>RAM: 1 GB</li>
+                    <li></li>
+                </ul>
+                <a
+                    class="btn btn-secondary"
+                    href="https://github.com/LibreSprite/LibreSprite/releases"
+                >
+                    AppImage
+                    <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                </a>
+                <a
+                    class="btn btn-secondary"
+                    href="https://flathub.org/apps/details/com.github.libresprite.LibreSprite"
+                >
+                    Flathub
+                    <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">macOS</h4>
+            </div>
+            <div class="card-body">
+                <i class="fa fa-apple fa-5x icons-dowloads"></i>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <b>System Requirements:</b>
+                    <li>OS: Mac OS X 10.11.4</li>
+                    <li>Processor: x86 or x64 bits</li>
+                    <li>RAM: 1 GB</li>
+                    <li></li>
+                </ul>
+
+                <p>Unavailable</p>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Source Code</h4>
+            </div>
+            <div class="card-body">
+                <i class="fa fa-github fa-5x icons-dowloads"></i>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <b>Instructions:</b>
+                    <li>
+                        1) Get<a href="https://git-scm.com/downloads"> git </a
+                        >for your system
+                    </li>
+                    <li>2) Clone the repository</li>
+                    <li>
+                        <input
+                            type="text"
+                            value="git clone --recursive https://github.com/LibreSprite/LibreSprite"
+                            id="repo"
+                            readonly
+                        />
+                        <button
+                            class="btn btn-light"
+                            id="btn-github"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="right"
+                            title="Copy to clipboard"
+                        >
+                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                        </button>
+                    </li>
+                </ul>
+                <a
+                    class="btn btn-secondary"
+                    href="https://github.com/LibreSprite/LibreSprite/releases"
+                >
+                    Zip file
+                    <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    new bootstrap.Tooltip(document.getElementById("btn-github"));
+
+    new ClipboardJS("#btn-github", {
+        target: function () {
+            return document.getElementById("repo");
+        },
+    });
+</script>
